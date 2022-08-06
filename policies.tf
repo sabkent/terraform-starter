@@ -122,9 +122,4 @@ resource "spacelift_policy_attachment" "trigger-self" {
 # You can read more about login policies here:
 #
 # https://docs.spacelift.io/concepts/policy/login-policy
-resource "spacelift_policy" "login" {
-  type = "LOGIN"
 
-  name = "DevOps are admins"
-  body = file("${path.module}/policies/login.rego")
-}
