@@ -4,3 +4,7 @@ resource "random_password" "secret" {
   length  = 8
   special = true
 }
+
+resource "aws_iam_role" "my_role" {
+  name = "my role"
+}
